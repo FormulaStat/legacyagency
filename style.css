@@ -1,11 +1,13 @@
+/* Base Styling */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: #0f0f0f;
-  color: #fff;
+  color: #ffffff;
   overflow-x: hidden;
 }
 
+/* Hero Section */
 .hero {
   height: 100vh;
   background: linear-gradient(to bottom right, #0d1117, #1f2937);
@@ -14,12 +16,15 @@ body {
   justify-content: center;
   text-align: center;
   position: relative;
+  padding: 0 20px;
 }
 
+/* Overlay Animation */
 .overlay {
   animation: fadeInUp 1s ease-in-out forwards;
 }
 
+/* Headings */
 h1 {
   font-size: 3rem;
   margin-bottom: 10px;
@@ -32,31 +37,34 @@ h1 {
   color: #cbd5e1;
 }
 
+/* Button Styling */
 .glow-btn {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 30px;
-  background: #10b981;
+  background-color: #10b981;
   border: none;
   border-radius: 8px;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s ease;
   box-shadow: 0 0 10px #10b981, 0 0 20px #10b981;
 }
 
 .glow-btn:hover {
-  background: #059669;
+  background-color: #059669;
   box-shadow: 0 0 20px #059669;
 }
 
+/* Section Styling */
 .section {
   padding: 60px 20px;
-  background: #1e293b;
+  background-color: #1e293b;
   text-align: center;
 }
 
+/* Fade-in Animation */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -71,6 +79,7 @@ h1 {
   }
 }
 
+/* Logo Section */
 .logo-section {
   display: flex;
   flex-direction: column;
@@ -90,9 +99,29 @@ h1 {
   transform: scale(1.05);
 }
 
+/* Agency Name */
 .agency-name {
   font-size: 1.8rem;
   font-weight: 600;
   color: #facc15;
   margin: 0;
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .typing {
+    font-size: 1rem;
+  }
+
+  .glow-btn {
+    padding: 10px 24px;
+  }
+
+  .agency-name {
+    font-size: 1.4rem;
+  }
 }
