@@ -1,0 +1,94 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #101020);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Logo and Name */
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.agency-name {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00ffd5;
+  text-shadow: 0 0 10px #00ffd5, 0 0 20px #00ffd5;
+}
+
+/* Typing Text */
+.typing {
+  font-size: 1.3rem;
+  margin: 10px 0 30px;
+  min-height: 30px;
+  color: #fff;
+  border-right: 2px solid #00ffd5;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Button */
+.glow-btn {
+  padding: 12px 25px;
+  background: #00ffd5;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 0 15px #00ffd5, 0 0 30px #00ffd5;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.glow-btn:hover {
+  background: #00ccaa;
+  transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
