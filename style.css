@@ -14,38 +14,34 @@ body {
 
 /* Navbar */
 .navbar {
+.navbar {
   position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 20px 5%;
+  top: 30px;
+  right: 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(6px);
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .logo {
-  height: 45px;
+  display: none; /* Hide logo from the navbar if not needed on right */
 }
 
 .nav-links {
-  display: flex;
   list-style: none;
+  display: flex;
   gap: 25px;
 }
 
 .nav-links li a {
+  color: #004080;
   text-decoration: none;
-  color: #0072b1;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #0a58ca;
+  color: #0077cc;
 }
 
 /* Hero section */
