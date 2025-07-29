@@ -70,3 +70,10 @@ h1 {
     transform: translateY(0);
   }
 }
+
+.logo {
+  width: 150px;
+  max-width: 90%;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-in-out forwards;
+}
