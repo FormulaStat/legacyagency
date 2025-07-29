@@ -1,14 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("fade-in");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
+// Toggle navbar links on mobile
+const toggleMenu = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-  document.querySelectorAll(".fade-in").forEach(el => {
-    observer.observe(el);
-  });
+toggleMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
 });
