@@ -147,3 +147,16 @@ body {
     font-size: 1rem;
   }
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: #004080;
+  }
+}
