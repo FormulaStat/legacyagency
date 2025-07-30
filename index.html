@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Legacy Access Agency</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -18,57 +16,83 @@
         <h1 class="logo-text">Legacy Access Agency</h1>
       </div>
       <nav class="nav-links">
-        <a href="apply.html">Apply</a>
-        <a href="eligibility.html">Eligibility</a>
-        <a href="#grants">Grants</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="#about">About</a>
+  <a href="grants.html">Grants</a>
+  <a href="#documents">Documents</a>
+  <a href="#stories">Stories</a>
+  <a href="#contact">Contact</a>
+  <a href="login.html">Portal</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- Hero / Home -->
+  <section id="home" class="hero">
     <div class="container">
-      <h2 class="animate fadeInDown">Access Verified Benefits, Grants & Relief — The Right Way</h2>
-      <p class="animate fadeInUp">We guide you through official U.S. programs — housing, emergency aid, business relief, and more.</p>
-      <a href="apply.html" class="btn-primary animate fadeIn">Start Application</a>
+      <h2 class="animate fadeInDown">We Help Americans Access Verified Grants & Recovery Aid</h2>
+      <p class="animate fadeInUp">Get step-by-step support for housing aid, disaster relief, business help, and more.</p>
+      <a href="apply.html" class="btn-primary animate fadeIn">Apply for Help</a>
     </div>
   </section>
 
-  <!-- Grants Section -->
-  <section id="grants" class="section light-bg">
+  <!-- About Us -->
+  <section id="about" class="section light-bg">
     <div class="container">
-      <h3 class="section-title">Available Grant Programs</h3>
-      <ul class="grid-list">
-        <li>Emergency Rental Assistance</li>
-        <li>Utility Bill Support</li>
-        <li>Disaster Relief Funds</li>
-        <li>Small Business Recovery Grants</li>
+      <h3 class="section-title">About Legacy Access</h3>
+      <p class="text-center animate">We’re a community-driven agency helping eligible citizens access official U.S. relief programs. Our mission is to make the process simple, secure, and accessible — especially for underserved families and individuals.</p>
+    </div>
+  </section>
+
+  <!-- Apply / Grants -->
+  <section id="grants" class="section dark-bg">
+    <div class="container">
+      <h3 class="section-title">Programs You Can Apply For</h3>
+      <ul class="grid-list animate">
+        <li>🏠 Emergency Housing Assistance</li>
+        <li>💡 Utility & Energy Bill Support</li>
+        <li>💼 Business Recovery & Start-up Grants</li>
+        <li>🌪️ Disaster Recovery Relief</li>
       </ul>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="section dark-bg">
-    <div class="container">
-      <h3 class="section-title">Our Services</h3>
-      <div class="service-grid">
-        <div class="service-card">📄 Personalized Application Help</div>
-        <div class="service-card">🛡️ Document Verification Guidance</div>
-        <div class="service-card">⚡ Priority Processing (optional)</div>
-        <div class="service-card">📞 WhatsApp Support Line</div>
+      <div class="text-center" style="margin-top: 20px;">
+        <a href="apply.html" class="btn-primary">Start Application</a>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Document Guide -->
+  <section id="documents" class="section light-bg">
+    <div class="container">
+      <h3 class="section-title">What You Need to Apply</h3>
+      <ul class="grid-list animate">
+        <li>Valid Government-Issued ID</li>
+        <li>Proof of Address or Lease</li>
+        <li>Income Statement or Tax Return</li>
+        <li>Optional: Utility or Medical Bills</li>
+      </ul>
+      <p class="text-center">Be sure documents are scanned or photographed clearly. We’ll guide you during the upload process.</p>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section id="stories" class="section dark-bg">
+    <div class="container">
+      <h3 class="section-title">Real People. Real Relief.</h3>
+      <div class="service-grid animate">
+        <div class="service-card">“I got rent assistance within 3 weeks. Thank you Legacy!” – Maria F.</div>
+        <div class="service-card">“The grant helped me relaunch my cleaning business after COVID.” – Daniel K.</div>
+        <div class="service-card">“They walked me through everything. Total lifesaver.” – Jasmine W.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section id="contact" class="section contact-section">
     <div class="container">
-      <h3 class="section-title">Get In Touch</h3>
-      <p>Need help? Chat with us or email directly for assistance.</p>
+      <h3 class="section-title">Need Help or Questions?</h3>
+      <p class="text-center">We’re here to guide you. Reach us by chat, WhatsApp, or email.</p>
       <a href="https://wa.me/1XXXXXXXXXX" target="_blank" class="btn-secondary">Chat on WhatsApp</a>
-      <p>Email: <a href="mailto:support@legacyaccess.org">support@legacyaccess.org</a></p>
+      <p class="text-center">Email: <a href="mailto:support@legacyaccess.org">support@legacyaccess.org</a></p>
     </div>
   </section>
 
@@ -80,13 +104,12 @@
     </div>
   </footer>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/1XXXXXXXXXX" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+  </a>
 
-  <!-- Floating WhatsApp Button -->
-<a href="https://wa.me/1XXXXXXXXXX" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
-</a>
-  
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
