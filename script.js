@@ -28,9 +28,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Mobile nav toggle
-const navToggle = document.getElementById('navToggle');
-const navMenu = document.getElementById('navMenu');
+  const navToggle = document.getElementById("navToggle");
+  const navLinks = document.querySelector(".nav-links");
+  const allLinks = document.querySelectorAll(".nav-links a");
 
-navToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
-});
+  navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+
+  allLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+    });
+  });
