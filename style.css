@@ -246,7 +246,8 @@ body {
   }
 
   .nav-links.show {
-    display: flex;
+  display: flex !important;
+  flex-direction: column;
   }
 
   .nav-links a {
