@@ -29,8 +29,9 @@ body {
 }
 .nav-flex {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 .logo-section {
   display: flex;
@@ -223,6 +224,10 @@ body {
   font-size: 28px;
   cursor: pointer;
   color: #00274d;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  z-index: 999;
 }
 
 @media (max-width: 768px) {
