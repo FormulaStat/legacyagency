@@ -254,3 +254,71 @@ body {
     margin: 10px 20px;
   }
 }
+
+.testimonial-section {
+  position: relative;
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  text-align: center;
+}
+
+.testimonial-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.testimonial-slider {
+  display: flex;
+  animation: slide 18s linear infinite;
+  gap: 40px;
+  width: max-content;
+}
+
+.testimonial {
+  min-width: 300px;
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.testimonial strong {
+  display: block;
+  margin-top: 15px;
+  color: #007bff;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Watermark logo */
+.testimonial-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background-image: url("image/access_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.05;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.testimonial-slider, .testimonial {
+  position: relative;
+  z-index: 1;
+}
