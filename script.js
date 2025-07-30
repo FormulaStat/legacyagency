@@ -41,3 +41,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       navLinks.classList.remove("show");
     });
   });
+
+  const testimonials = document.querySelectorAll('.testimonial');
+  let index = 0;
+
+  function showNextTestimonial() {
+    testimonials[index].classList.remove('active');
+
+    index = (index + 1) % testimonials.length;
+
+    testimonials[index].classList.add('active');
+  }
+
+  // Start with only the first one active
+  testimonials[0].classList.add('active');
+
+  // Rotate every 5 seconds
+  setInterval(showNextTestimonial, 5000);
