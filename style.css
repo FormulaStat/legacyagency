@@ -322,3 +322,44 @@ body {
   position: relative;
   z-index: 1;
 }
+
+.testimonials {
+  position: relative;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  overflow: hidden;
+}
+
+.testimonial-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.testimonial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1s ease-in-out;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  background-image: url('image/access_logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.testimonial.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 2;
+}
