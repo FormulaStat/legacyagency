@@ -58,3 +58,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
   // Rotate every 5 seconds
   setInterval(showNextTestimonial, 5000);
+
+
+  document.querySelectorAll('.read-more-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+      const desc = this.previousElementSibling;
+      if (desc.style.display === 'none') {
+        desc.style.display = 'block';
+        this.textContent = 'Show Less';
+      } else {
+        desc.style.display = 'none';
+        this.textContent = 'Read More';
+      }
+    });
+  });
