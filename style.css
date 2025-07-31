@@ -459,3 +459,22 @@ body {
   margin-top: 10px;
   text-decoration: none;
 }
+
+@media (min-width: 768px) {
+  .testimonial {
+    font-size: 1.2rem;
+    padding: 25px;
+  }
+
+  .testimonial blockquote {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  .testimonial cite {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+  }
+}
