@@ -384,4 +384,21 @@ body {
   margin-bottom: 30px;
 }
 
+.hero {
+  position: relative;
+  background-color: #0d6efd; /* your blue background */
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('images/bgimg.jpg') no-repeat center center / cover;
+  opacity: 0.08; /* Adjust opacity to keep it soft */
+  z-index: 0;
+}
 
