@@ -348,13 +348,12 @@ body {
 
 .testimonial {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 90%;
+  max-width: 600px;
   opacity: 0;
   transform: translateX(100%);
   transition: all 1s ease-in-out;
-  padding: 20px;
+  padding: 30px 20px;
   font-size: 1.2rem;
   color: #333;
   background-image: url('images/access_logo.png');
