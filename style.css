@@ -402,3 +402,7 @@ body {
   z-index: 0;
 }
 
+.hero * {
+  position: relative;
+  z-index: 1;
+}
