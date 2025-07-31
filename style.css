@@ -408,13 +408,24 @@ body {
 }
 
 .grant-box {
-  background: #ffffff11;
+  background: #ffffff;
   padding: 20px;
   margin-bottom: 30px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.grant-box h4 {
+  color: #111;
+  margin-top: 10px;
+}
+
+.grant-box p,
+.full-desc {
+  color: #444;
+  font-size: 15px;
 }
 
 .grant-img {
@@ -427,11 +438,11 @@ body {
 
 .read-more-btn {
   background: none;
-  color: #0af;
+  color: #0073e6;
+  font-weight: 500;
   border: none;
   cursor: pointer;
-  margin-bottom: 10px;
-  display: inline-block;
+  margin-top: 10px;
 }
 
 .read-more-btn:hover {
@@ -439,6 +450,12 @@ body {
 }
 
 .apply-btn {
+  background-color: #00c389;
+  color: white;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 20px;
   display: inline-block;
   margin-top: 10px;
+  text-decoration: none;
 }
