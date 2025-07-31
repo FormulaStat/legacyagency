@@ -271,7 +271,7 @@ body {
 
 .testimonial-slider {
   display: flex;
-  animation: slide 18s linear infinite;
+  animation: slide 20s linear infinite;
   gap: 40px;
   width: max-content;
 }
@@ -352,7 +352,7 @@ body {
   max-width: 600px;
   opacity: 0;
   transform: translateX(100%);
-  transition: all 1s ease-in-out;
+  transition: all 2s ease-in-out;
   padding: 30px 20px;
   font-size: 1.2rem;
   color: #333;
