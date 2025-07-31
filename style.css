@@ -406,3 +406,39 @@ body {
   position: relative;
   z-index: 1;
 }
+
+.grant-box {
+  background: #ffffff11;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.grant-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.read-more-btn {
+  background: none;
+  color: #0af;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+.apply-btn {
+  display: inline-block;
+  margin-top: 10px;
+}
