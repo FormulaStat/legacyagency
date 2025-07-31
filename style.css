@@ -481,18 +481,22 @@ body {
 
 .section-subtext {
   text-align: center;
-  color: #ccc;
+  color: #f0f0f0; /* brighter for better visibility */
   font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
   margin-top: -10px;
   margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
   .section-subtext {
-    font-size: 1.25rem;
-    max-width: 800px;
+    font-size: 1.3rem;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
-    color: #ddd;
+    color: #ffffff; /* full white on desktop for clarity */
   }
 }
+
+text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
